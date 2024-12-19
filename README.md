@@ -1,64 +1,55 @@
-# Template de départ pour Table Schema
 
-Ce dépôt contient les fichiers nécessaires pour démarrer la création d'un dépôt pour un schéma [Table Schema](https://specs.frictionlessdata.io/table-schema/).
+### **ReadMe**
+# **Recensement des tiers-lieux 2023**
 
-## Utiliser ce template
+**Contexte de réalisation** 
+`	`En 2023, un nouveau recensement des tiers-lieux a été organisé aux côtés des réseaux régionaux, des réseaux nationaux (le RFFLabs Réseau Français des FabLabs, Espaces et Communautés du Faire, le réseau des Lieux intermédiaires et indépendants ou encore Tiers-Lieux Édu), de Commune Mesure, de l'ensemble des ministères qui soutiennent les tiers-lieux et de l'ANCT. 
+`	`Dans ce recensement et cette enquête par questionnaire, nous nous appuyons sur une conception inclusive des tiers-lieux, respectueuse de leur diversité : fablabs, jardins partagés, lieux intermédiaires, tiers-espaces, cafés associatifs, espaces de travail partagés, etc. Ce recensement était donc adressé à tous ceux qui font tiers-lieux : mutualisant des espaces et des compétences, hybridant des activités, réunissant des collectifs citoyens engagés, favorisant la coopération pour répondre aux enjeux de leur territoire, etc. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Cette enquête dite du « Recensement » a été lancée le 13 mars et s’est clôturée le 10 mai 2023. 
 
-- Si vous créez votre dépôt sur GitHub, il vous suffit d'appuyer sur le bouton vert "Use this template". Consultez [la documentation](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) pour plus d'infos ;
-- Si votre projet sera hébergé ailleurs (par exemple Gitlab), vous pouvez cloner ce répertoire ou télécharger les fichiers correspondants. Utilisez le bouton "Clone or download".
+Par la suite, nous avons travaillé avec Données et Territoires de l’Agence Nationale de la Cohésion des Territoires, l’Institut Paris Région et Open Atlas pour le nettoyage des données, leur analyse et leur publication.
 
-## Fichiers disponibles
+À la suite de cette campagne de recensement, France Tiers-Lieux a officiellement lancé [l'Observatoire des tiers-lieux](https://observatoire.francetierslieux.fr/ "https://observatoire.francetierslieux.fr/"), un espace de production et de diffusion de connaissances, pour les tiers-lieux et l'ensemble de leurs partenaires.
 
-Ce dépôt contient un ensemble de fichiers utiles pour un dépôt d'un schéma [Table Schema](https://specs.frictionlessdata.io/table-schema/).
+## **Contenu de la base de données**
+Vous pouvez retrouver la trame du questionnaire co-construit avec les partenaires du recensement ici : <https://nuage.francetierslieux.fr/s/5gd8PMbQRErAFGy> 
 
-- [`CHANGELOG.md`](CHANGELOG.md) contient la liste des changements entre les différentes versions de votre schéma ;
-- [`exemple-valide.csv`](exemple-valide.csv) est un fichier CSV d'exemple conforme par rapport au schéma décrit dans `schema.json`  ;
-- [`LICENSE.md`](LICENSE.md) est le fichier de licence du dépôt. Nous recommandons d'utiliser la [Licence Ouverte](https://www.etalab.gouv.fr/licence-ouverte-open-licence), cette licence est recommandée par l'administration française pour le partage de données et de documents ;
-- [`README.md`](README.md) est le fichier que vous lisez actuellement. À terme, il devra présenter votre schéma ;
-- [`requirements.txt`](requirements.txt) liste les dépendances Python nécessaires pour effectuer des tests en intégration continue sur votre dépôt ;
-- [`schema.json`](schema.json) est le schéma au format Table Schema.
+207 questions réparties en 10 catégories thématiques du questionnaire : 
 
-### Intégration continue
+- Fiche d’identité, 
+- Informations générales, 
+- Foncier, 
+- Vos activités, 
+- Publics, 
+- Ressources Humaines, 
+- Gouvernance, 
+- Partenariats, 
+- Modèle économique 
+- et Perspectives Futures
 
-Ce dépôt est configuré pour utiliser de l'intégration continue, si vous utilisez GitHub. À chaque commit, une suite de tests sera lancée via [GitHub Actions](https://github.com/features/actions) afin de vérifier :
+Basée sur de l’auto-déclaratif, 1659 tiers-lieux ont répondu au questionnaire. Certaines questions de catégories thématiques n’étaient pas obligatoires, si bien que certaines réponses des tiers-lieux peuvent être manquantes à certains endroits.
 
-- que votre schéma est valide à la spécification Table Schema ;
-- que vos fichiers d'exemples sont conformes au schéma.
+Dans la catégorie « Modèle économique », les tiers-lieux avaient le choix de ne pas partager en open data leurs données économiques dites sensibles. Seulement les réponses de ceux ayant acceptés le partage en OD sont disponibles dans la base de données.
+## **Explication des colonnes**
+Voir dans fichier Métadonnées
+## **Réutilisation**
+Ce jeu de données est publiée par France Tiers-Lieux et il est diffusé sous licence Ouverte 2.0 (voir le fichier LICENCE.md).
 
-Si vous n'utilisez pas GitHub, vous pouvez lancer ces tests sur votre machine ou sur un autre service d'intégration continue comme Gitlab CI, Jenkins, Circle CI, Travis etc. Consultez la configuration utilisée dans [`.github/workflows/test.yml`](.github/workflows/test.yml).
+## **À propos de France Tiers-Lieux :**
+À partir du 1er septembre 2022, France Tiers-Lieux est devenu un Groupement d’intérêt public qui réuni 6 membres fondateurs à son démarrage :
 
-Localement, voici la procédure à suivre pour installer l'environnement de test et lancer les tests :
+l’État, représenté par 4 ministères :
+le ministère de la Transition écologique et de la Cohésion des territoires
+le ministère du Travail
+le ministère de l’Enseignement supérieur et Recherche
+le ministère de l’Économie, des Finances (Petites et moyennes entreprises).
+l’Agence nationale de la cohésion des territoires (ANCT)
+l’Association Nationale des Tiers-Lieux
 
-```bash
-# Création d'un environnement virtuel en Python 3
-python3 -m venv venv
-source venv/bin/activate
+Le groupement a pour objet d’appuyer l’émergence, le développement et la pérennisation des tiers-lieux en France.
 
-# Installation des dépendances
-pip install -r requirements.txt
+De 1800 dénombrés en 2018, suite au premier rapport sur les tiers-lieux remis au gouvernement par l’Association Nationale des tiers-lieux, ils sont près de 3500 aujourd’hui.
 
-# Test de la validité du schéma
-frictionless validate --type schema schema.json
+Véritable phénomène de société, le mouvement des tiers-lieux est composé d’acteurs qui apportent en hyper-proximité des réponses aux enjeux de notre société : acteurs de la transition écologique, du réemploi, des circuits-courts, de la relocalisation de la production, de la transition numérique, de l’accès à une alimentation locale, durable ou encore de la démocratisation des pratiques culturelles, etc.
 
-# Test de la conformité des fichiers d'exemples
-frictionless validate --schema schema.json exemple-valide.csv
-```
-
-## Étapes à suivre
-
-Nous détaillons ci-dessous les étapes que nous vous conseillons de suivre après avoir créé votre dépôt Git, tout en utilisant les fichiers d'exemples.
-
-- [ ] Décrire votre schéma dans le fichier `schema.json` en respectant la spécification Table Schema. Le fichier d'exemple comprend des valeurs d'exemples pour toutes les métadonnées possibles. Notez que les champs d'exemple ne comprennent qu'une petite partie des types, formats et contraintes disponibles, référez-vous à [la documentation](https://specs.frictionlessdata.io/table-schema/#types-and-formats) pour toutes les valeurs possibles. Si certaines métadonnées ne sont pas nécessaires pour votre projet, vous pouvez les supprimer. Pour vérifier que votre schéma est conforme, vous pouvez utiliser l'outil [tableschema](https://pypi.org/project/tableschema/) en ligne de commande : `tableschema validate schema.json`
-- [ ] Modifier le fichier d'exemple CSV avec des données conforme à votre schéma. L'outil [frictionless](https://pypi.org/project/frictionless/) permet de vérifier que vos fichiers sont conformes au schéma en ligne de commande `frictionless validate --schema schema.json exemple-valide.csv`
-- [ ] Modifier le fichier [`CHANGELOG.md`](CHANGELOG.md) pour indiquer la publication initiale
-- [ ] Modifier le fichier [`README.md`](README.md), en supprimant tout son contenu tout d'abord. Au sein de plusieurs paragraphes, vous indiquerez le contexte, les modalités de production des données, le cadre juridique, la finalité, les cas d’usage etc. Consultez plusieurs schémas sur [schema.data.gouv.fr](https://schema.data.gouv.fr) pour découvrir quelles informations sont pertinentes à indiquer
-- [ ] Vérifier que la licence ouverte vous convient. Si vous devez utiliser une autre licence, modifiez le fichier [`LICENSE.md`](LICENSE.md) et indiquez la licence dans le fichier [`schema.json`](schema.json), dans la clé `licenses`
-
-
-## Documentation
-
-Pour vous aider dans la construction de votre dépôt, nous vous recommandons de vous référer à :
-
-- [Le guide à destination des producteurs de schéma](https://guides.etalab.gouv.fr/producteurs-schemas/)
-- [La documentation de schema.data.gouv.fr](https://schema.data.gouv.fr)
-- [La spécification Table Schema](https://specs.frictionlessdata.io/table-schema/)
