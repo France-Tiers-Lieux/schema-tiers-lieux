@@ -1,6 +1,5 @@
 
-### **ReadMe**
-# **Recensement des tiers-lieux 2023**
+### **Recensement des tiers-lieux 2023**
 
 ## **Contexte de réalisation** 
 En 2023, un nouveau recensement des tiers-lieux a été organisé aux côtés des réseaux régionaux, des réseaux nationaux (le RFFLabs Réseau Français des FabLabs, Espaces et Communautés du Faire, le réseau des Lieux intermédiaires et indépendants ou encore Tiers-Lieux Édu), de Commune Mesure, de l'ensemble des ministères qui soutiennent les tiers-lieux et de l'ANCT. 
